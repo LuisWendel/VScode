@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <div>
+        <label>escreva aqui <input type="text" name="tipo" id="tipo">
+        
+        </label>  
+        <button onclick="cli()">clique aqui</button>      
+    </div>
+    </form>
+    <script>
+        function cli() {
+        let dot = window.document.getElementById('tipo')
+        let txtdot = dot.value
+        if(txtdot.includes('dota') == true){
+            window.alert(`${txtdot}, verdadeiro`)
+        }else{
+
+            window.alert(`${txtdot}, false`)
+        }   
+    
+    }
+    </script>
+
+</body>
+</html>
